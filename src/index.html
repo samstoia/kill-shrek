@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RPG Game</title>
+  </head>
+  <body>
+    <h1>RPG Game</h1>
+
+    <div class="container">
+      <div class="playerSelector">
+        <h2>Select your Character Type</h2>
+        <button id="warrior" type="button">Warrior</button>
+        <button id="wizard" type="button">Wizard</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="pickName">
+        <h3 id="characterType"></h3>
+        <form id="nameForm">
+          <p>Enter Your Character's Name</p>
+          <input type="text" name="name" id="inputName">
+          <button type="submit" name="button" id="nameButton">Go!</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="play">
+        <h3 class="playerName"></h3>
+        <h5 class="playerClass"></h5>
+        <span id="beginQuest">
+          Youre about to set off to kill the evil troll.
+          <button type="button" id="begin">Begin Quest</button>
+        </span>
+      </div>
+    </div>
+
+    <div id="playArea" class="container">
+      <span id="itemChoice">
+        What item would you like to use to kill the evil troll?
+        <button type="button" id="sword">Sword</button>
+        <button type="button" id="staff">Magical Staff</button>
+        <button type="button" id="none">I'm brave, I don't need a weapon</button>
+      </span>
+      <p id="inventory">
+      </p>
+      <div id="fightOption">
+        <h4>Once you pick up your weapon, the troll suddenly appears.  What do you do?</h4>
+        <button type="button" id="fight">Fight</button>
+        <button type="button" id="run">Run</button>
+      </div>
+    </div>
+
+    <div class="youDie">
+      <h2>You tried to run, but the troll caught up to you and killed you.</h2>
+      <a href="/index.html"><button type="button" id="playAgain">Play Again</button></a>
+    </div>
+
+    <div class="battleArena">
+      <span id="battleArenaText">
+      <p>The Battle Begins!</p>
+    </div>
+    <span id="combatButtons">
+    <br>
+    <button type="button" id="attackPhysical">Attack The Troll with a physical attack</button>
+    <button type="button" id="attackMagical">Attack The Troll with a magical attack</button>
+    </span>
+
+
+    <div class="battleText">
+
+    </div>
+
+
+  </body>
+</html>
